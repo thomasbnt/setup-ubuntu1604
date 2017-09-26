@@ -34,7 +34,7 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt install openvpn 
     apt install network-manager-openvpn
     wget https://discordapp.com/api/download?platform=linux&format=deb
-    apt -f install  
+    apt-get install -f
     apt install chromium-browser
     mkdir -p /etc/lightdm/lightdm.conf.d
     touch /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
