@@ -33,13 +33,14 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install unity-tweak-tool
     apt install openvpn 
     apt install network-manager-openvpn
-    wget https://discordapp.com/api/download?platform=linux&format=deb
-    apt-get install -f
+    apt install network-manager-openvpn-gnome
     apt install chromium-browser
     mkdir -p /etc/lightdm/lightdm.conf.d
     touch /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
     echo "[SeatDefaults]" >> /etc/lightdm/lightdm.conf.d/50-disable-guest.conf 
     echo "allow-guest=false" >> /etc/lightdm/lightdm.conf.d/50-disable-guest.conf 
+    wget https://discordapp.com/api/download?platform=linux&format=deb
+    apt-get install -f
 
     
     
