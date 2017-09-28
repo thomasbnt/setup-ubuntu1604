@@ -24,23 +24,27 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     echo ""
     echo "# Installing.."
     apt-get update
-    apt install git
-    apt install gimp
+    apt-get install curl
+    apt-get install git
+    apt-get install gimp
     add-apt-repository ppa:snwh/pulp
     apt-get update
     apt-get install paper-gtk-theme 
     apt-get install paper-icon-theme
     apt-get install unity-tweak-tool
-    apt install openvpn 
-    apt install network-manager-openvpn
-    apt install network-manager-openvpn-gnome
-    apt install chromium-browser
+    apt-get install openvpn 
+    apt-get install network-manager-openvpn
+    apt-get install network-manager-openvpn-gnome
+    apt-get install chromium-browser
+    curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+    apt-get install -y nodejs
     mkdir -p /etc/lightdm/lightdm.conf.d
     touch /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
     echo "[SeatDefaults]" >> /etc/lightdm/lightdm.conf.d/50-disable-guest.conf 
     echo "allow-guest=false" >> /etc/lightdm/lightdm.conf.d/50-disable-guest.conf 
     wget https://discordapp.com/api/download?platform=linux&format=deb
     apt-get install -f
+    echo "# Finished !"
 
     
     
