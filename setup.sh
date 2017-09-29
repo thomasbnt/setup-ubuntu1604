@@ -35,6 +35,7 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install openvpn 
     apt-get install network-manager-openvpn
     apt-get install network-manager-openvpn-gnome
+    apt-get install filezilla
     apt-get install chromium-browser
     curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
     apt-get install -y nodejs
