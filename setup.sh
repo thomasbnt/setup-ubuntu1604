@@ -37,7 +37,7 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install network-manager-openvpn-gnome
     apt-get install filezilla
     apt-get install chromium-browser
-    curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
     apt-get install -y nodejs
     mkdir -p /etc/lightdm/lightdm.conf.d
     touch /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
