@@ -13,6 +13,7 @@ sudo -s
 
 ## Software list
 
+* curl
 * Git 
 * Gimp
 * paper-gtk-theme
@@ -20,8 +21,11 @@ sudo -s
 * unity-tweak-tool 
 * openvpn 
 * network-manager-openvpn 
+* network-manager-openvpn-gnome
 * Discord 
 * Chromium-browser
+* Filezilla client
+* NodeJS V8
 
 ## Contributing
 
