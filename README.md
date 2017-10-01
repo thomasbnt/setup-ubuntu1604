@@ -1,11 +1,11 @@
 # Setup
 
-Install softwares for your Ubuntu 16.04 . 
+Install softwares for your Ubuntu 16.04 .
 
 
 ### Installing
 
-This script must be run as root 
+This script must be run as root
 
 ```
 sudo -s
@@ -14,18 +14,19 @@ sudo -s
 ## Software list
 
 * curl
-* Git 
+* Git
 * Gimp
 * paper-gtk-theme
 * paper-icon-theme
-* unity-tweak-tool 
-* openvpn 
-* network-manager-openvpn 
+* unity-tweak-tool
+* openvpn
+* network-manager-openvpn
 * network-manager-openvpn-gnome
-* Discord 
+* Discord
 * Chromium-browser
 * Filezilla client
 * NodeJS V8
+* Atom IDE
 
 ## Contributing
 
@@ -39,6 +40,3 @@ See the list of [contributors](https://github.com/thomasbnt/setup-ubuntu1604/con
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-
-
