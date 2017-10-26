@@ -37,8 +37,12 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install network-manager-openvpn-gnome
     apt-get install filezilla
     apt-get install chromium-browser
-    wget https://atom.io/download/deb
     apt-get install -f
+    wget https://atom.io/download/deb
+    dpkg -i deb
+    apt-get install -f
+    apt-get install nodejs-legacy
+    apt-get update
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
     apt-get install -y nodejs
     mkdir -p /etc/lightdm/lightdm.conf.d
@@ -46,6 +50,7 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     echo "[SeatDefaults]" >> /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
     echo "allow-guest=false" >> /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
     wget https://discordapp.com/api/download?platform=linux&format=deb
+    dpkg -i download?platform=linux&format=deb
     apt-get install -f
     echo "# Finished !"
 
