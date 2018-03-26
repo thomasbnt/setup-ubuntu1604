@@ -23,35 +23,35 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     echo ""
     echo ""
     echo "# Installing.."
-    apt-get update
-    apt-get install curl
-    apt-get install git
-    apt-get install gimp
+    apt-get update -y
+    apt-get install curl -y
+    apt-get install git -y
+    apt-get install gimp -y 
     add-apt-repository ppa:snwh/pulp
     apt-get update
-    apt-get install paper-gtk-theme
-    apt-get install paper-icon-theme
-    apt-get install unity-tweak-tool
-    apt-get install openvpn
-    apt-get install network-manager-openvpn
-    apt-get install network-manager-openvpn-gnome
-    apt-get install filezilla
-    apt-get install chromium-browser
-    apt-get install -f
+    apt-get install paper-gtk-theme -y
+    apt-get install paper-icon-theme -y
+    apt-get install unity-tweak-tool -y
+    apt-get install openvpn -y
+    apt-get install network-manager-openvpn -y
+    apt-get install network-manager-openvpn-gnome -y
+    apt-get install filezilla -y
+    apt-get install chromium-browser -y
+    apt-get install -f -y
     wget https://atom.io/download/deb
     dpkg -i deb
-    apt-get install -f
+    apt-get install -f -y
     apt-get install nodejs-legacy
-    apt-get update
+    apt-get update -y
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-    apt-get install -y nodejs
+    apt-get install -y nodejs -y
     mkdir -p /etc/lightdm/lightdm.conf.d
     touch /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
     echo "[SeatDefaults]" >> /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
     echo "allow-guest=false" >> /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
     wget https://discordapp.com/api/download?platform=linux&format=deb
     dpkg -i download?platform=linux&format=deb
-    apt-get install -f
+    apt-get install -f -y
     echo "# Finished !"
 
 
