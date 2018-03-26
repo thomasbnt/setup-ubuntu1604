@@ -41,6 +41,8 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get update -y
     curl -sL https://deb.nodesource.com/setup_9.x | sudo -E -y bash -
     apt-get install -y nodejs
+    apt apt-get install apache2 php mysql-server libapache2-mod-php php-mysql -y
+    apt-get install php-curl php-gd php-intl php-json php-mbstring php-mcrypt php-xml php-zip -y
     mkdir -p /etc/lightdm/lightdm.conf.d
     touch /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
     echo "[SeatDefaults]" >> /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
