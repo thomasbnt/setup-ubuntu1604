@@ -1,6 +1,6 @@
 # Setup
 
-Install softwares for your Ubuntu 16.04 .
+Install softwares for your **Ubuntu 16.04** .
 
 
 ### Installing
@@ -22,11 +22,9 @@ sudo -s
 * openvpn
 * network-manager-openvpn
 * network-manager-openvpn-gnome
-* Discord
 * Chromium-browser
 * Filezilla client
-* NodeJS V8
-* Atom IDE
+* NodeJS V9
 
 ## Contributing
 
