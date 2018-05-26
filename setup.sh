@@ -38,7 +38,9 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install filezilla -y
     apt-get install chromium-browser -y
     apt-get install -f -y
+    add-apt-repository ppa:peek-developers/stable
     apt-get update -y
+    apt-get install peek
     curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
     apt-get install -y nodejs
     apt-get install apache2 php mysql-server libapache2-mod-php php-mysql -y

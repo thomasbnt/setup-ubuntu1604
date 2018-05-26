@@ -19,6 +19,7 @@ sudo -s
 * Gimp
 * Chromium-browser
 * Filezilla client
+* Peek 
 
 ## Material Theme
 
