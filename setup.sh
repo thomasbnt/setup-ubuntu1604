@@ -39,10 +39,13 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install chromium-browser -y
     apt-get install -f -y
     add-apt-repository ppa:peek-developers/stable
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     apt-get update -y
     apt-get install peek
-    curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
-    apt-get install -y nodejs
+    curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+    apt-get install nodejs -y
+    apt-get install yarn -y
     apt-get install apache2 php mysql-server libapache2-mod-php php-mysql -y
     apt-get install php-curl php-gd php-intl php-json php-mbstring php-mcrypt php-xml php-zip -y
     mkdir -p /etc/lightdm/lightdm.conf.d
