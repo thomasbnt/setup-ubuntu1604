@@ -48,25 +48,18 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install yarn -y
     apt-get install apache2 php mysql-server libapache2-mod-php php-mysql -y
     apt-get install php-curl php-gd php-intl php-json php-mbstring php-mcrypt php-xml php-zip -y
+    echo "Editing DNS to CloudFlare (File : scripts/dns_cloudflare.sh)"
+    bash ./scripts/dns_cloudflare.sh
+    echo "Setup Wallpaper random from Unsplash (File : scripts/wallpaper_unsplash.sh)"
+    mkdir "/tmp/Wallpapers_Unsplash"
+    yarn global add unsplash-wallpaper
+    bash ./scripts/wallpaper_unsplash.sh
+    echo "Disabling Guest login.."
     mkdir -p /etc/lightdm/lightdm.conf.d
     touch /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
     echo "[SeatDefaults]" >> /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
     echo "allow-guest=false" >> /etc/lightdm/lightdm.conf.d/50-disable-guest.conf
     echo "# Finished ! Please restart. "
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 elif [ "$answer" = "n" ] || [ "$answer" = "N" ] || [ "$answer" = "No"  ] || [ "$answer" = "no"  ] || [ "$answer" = "NO" ]; then
     echo ""

@@ -2,7 +2,7 @@
 
 Install softwares for your **Ubuntu 16.04** .
 
-_Restart your pc after all installations are complete._
+_Restart your computer after all installations are complete._
 
 ### Installing
 
@@ -21,12 +21,16 @@ sudo -s
 * Filezilla client
 * Peek 
 
-## Material Theme
+* Script `dns_cloudflare` for change to public DNS CloudFlare. 
+* Script `web_init` for initiate a new project for website.
+
+## Design
 
 * paper-gtk-theme
 * [paper-icon-theme](https://snwh.org/paper)
 * unity-tweak-tool
-
+* Script Wallpaper from Unsplash
+   
 ## Security
 
 * openvpn
@@ -47,6 +51,7 @@ See the list of [contributors](https://github.com/thomasbnt/setup-ubuntu1604/con
 ## Authors
 
 * **Thomas Bnt** - *Initial work* - [Website](https://thomasbnt.fr/)
+* **Cuth** - **Unsplash Wallpaper** - [Repository](https://github.com/cuth/unsplash-wallpaper)
 
 
 ## License
