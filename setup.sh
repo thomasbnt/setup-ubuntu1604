@@ -51,8 +51,6 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     echo "Editing DNS to CloudFlare (File : scripts/dns_cloudflare.sh)"
     bash ./scripts/dns_cloudflare.sh
     echo "Setup Wallpaper random from Unsplash (File : scripts/wallpaper_unsplash.sh)"
-    mkdir "/tmp/Wallpapers_Unsplash"
-    yarn global add unsplash-wallpaper
     bash ./scripts/wallpaper_unsplash.sh
     echo "Disabling Guest login.."
     mkdir -p /etc/lightdm/lightdm.conf.d
