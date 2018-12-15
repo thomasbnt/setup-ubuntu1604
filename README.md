@@ -51,7 +51,6 @@ See the list of [contributors](https://github.com/thomasbnt/setup-ubuntu1604/con
 ## Authors
 
 * **Thomas Bnt** - *Initial work* - [Website](https://thomasbnt.fr/)
-* **Cuth** - **Unsplash Wallpaper** - [Repository](https://github.com/cuth/unsplash-wallpaper)
 
 
 ## License
