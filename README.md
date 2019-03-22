@@ -17,6 +17,7 @@ sudo -s
 * curl
 * Git
 * Gimp
+* Gravit Designer
 * Chromium-browser
 * Filezilla client
 * Peek 
