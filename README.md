@@ -46,8 +46,9 @@ Disable the guest account and create the `.ssh` folder.
 * NodeJS V8
 * Yarn
 * Web Server (apache2, php, mysql-server, libapache2-mod-php, php-mysql)
-* PHP modules : **php-curl**, **php-gd**, **php-json**, **php-mbstring**, **php-mcrypt**, **php-xml**, **php-zip** .
+* PHP modules : **php-curl**, **php-gd**, **php-json**, **php-mbstring**, **php-mcrypt**, **php-xml**, **php-zip** 
 * Ruby 2.2
+* PhpMyAdmin
 
 ## Contributing
 

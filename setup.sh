@@ -53,7 +53,11 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install yarn -y
     "Installing WebServer"
     apt-get install apache2 php mysql-server libapache2-mod-php php-mysql -y
-    apt-get install php-curl php-gd php-intl php-json php-mbstring php-mcrypt php-xml php-zip -y
+    apt-get install php-curl php-gd php-intl php-json php-mbstring php-mcrypt php-xml php-zip php7.0-mbstring php-gettext -y
+    apt-get install phpmyadmin
+    echo "# Active PhpMyAdmin" >> /etc/apache2/apache2.conf
+    echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
+    sudo service apache2 restart
     echo "Editing DNS to CloudFlare (File : scripts/dns_cloudflare.sh)"
     bash ./scripts/dns_cloudflare.sh
     echo "Setup Wallpaper random from Unsplash (File : scripts/wallpaper_unsplash.sh)"
