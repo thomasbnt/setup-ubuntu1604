@@ -50,7 +50,7 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     "Installing NodeJS"
     apt-get install nodejs -y
     "Installing Yarn"
-    apt-get install yarn -y*
+    apt-get install yarn -y
     "Installing WebServer"
     apt-get install apache2 php mysql-server libapache2-mod-php php-mysql -y
     apt-get install php-curl php-gd php-intl php-json php-mbstring php-mcrypt php-xml php-zip -y
