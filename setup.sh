@@ -29,7 +29,9 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install gimp -y
     snap install gravit-designer
     add-apt-repository ppa:snwh/pulp
+    apt-add-repository ppa:brightbox/ruby-ng
     apt-get update -y
+    apt-get install software-properties-common
     apt-get install paper-gtk-theme -y
     apt-get install paper-icon-theme -y
     apt-get install unity-tweak-tool -y
@@ -37,6 +39,7 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install network-manager-openvpn -y
     apt-get install network-manager-openvpn-gnome -y
     apt-get install filezilla -y
+    apt-get install ruby2.2
     apt-get install chromium-browser -y
     apt-get install -f -y
     add-apt-repository ppa:peek-developers/stable

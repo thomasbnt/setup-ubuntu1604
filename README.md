@@ -44,6 +44,7 @@ sudo -s
 * Yarn
 * Web Server (apache2, php, mysql-server, libapache2-mod-php, php-mysql)
 * PHP modules : **php-curl**, **php-gd**, **php-json**, **php-mbstring**, **php-mcrypt**, **php-xml**, **php-zip** .
+* Ruby 2.2
 
 ## Contributing
 
