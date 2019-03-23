@@ -30,6 +30,9 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     snap install gravit-designer
     add-apt-repository ppa:snwh/pulp
     apt-add-repository ppa:brightbox/ruby-ng
+    add-apt-repository ppa:peek-developers/stable
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     apt-get update -y
     apt-get install software-properties-common
     apt-get install paper-gtk-theme -y
@@ -42,20 +45,21 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install ruby2.2
     apt-get install chromium-browser -y
     apt-get install -f -y
-    add-apt-repository ppa:peek-developers/stable
-    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-    apt-get update -y
     apt-get install peek
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+    "Installing NodeJS"
     apt-get install nodejs -y
-    apt-get install yarn -y
+    "Installing Yarn"
+    apt-get install yarn -y*
+    "Installing WebServer"
     apt-get install apache2 php mysql-server libapache2-mod-php php-mysql -y
     apt-get install php-curl php-gd php-intl php-json php-mbstring php-mcrypt php-xml php-zip -y
     echo "Editing DNS to CloudFlare (File : scripts/dns_cloudflare.sh)"
     bash ./scripts/dns_cloudflare.sh
     echo "Setup Wallpaper random from Unsplash (File : scripts/wallpaper_unsplash.sh)"
     bash ./scripts/wallpaper_unsplash.sh
+    echo "Creating .ssh folder"
+    mkdir ~/home/$USER/.ssh
     echo "Disabling Guest login.."
     mkdir -p /etc/lightdm/lightdm.conf.d
     touch /etc/lightdm/lightdm.conf.d/50-disable-guest.conf

@@ -1,6 +1,6 @@
 # Setup
 
-Install softwares for your **Ubuntu 16.04** .
+Install softwares for your **Ubuntu 16.04** . 
 
 _Restart your computer after all installations are complete._
 
@@ -24,13 +24,16 @@ sudo -s
 
 * Script `dns_cloudflare` for change to public DNS CloudFlare. 
 * Script `web_init` for initiate a new project for website.
+* Script Wallpaper from Unsplash
+  
+
+Disable the guest account and create the `.ssh` folder.
 
 ## Design
 
 * paper-gtk-theme
 * [paper-icon-theme](https://snwh.org/paper)
 * unity-tweak-tool
-* Script Wallpaper from Unsplash
    
 ## Security
 
@@ -52,7 +55,7 @@ See the list of [contributors](https://github.com/thomasbnt/setup-ubuntu1604/con
 
 ## Authors
 
-* **Thomas Bnt** - *Initial work* - [Website](https://thomasbnt.fr/)
+* **Thomas Bnt** - *Initial work* - [Website](https://www.thomasbnt.fr/)
 
 
 ## License
