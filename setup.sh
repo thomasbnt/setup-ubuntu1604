@@ -44,6 +44,7 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install filezilla -y
     apt-get install ruby2.2
     apt-get install ruby-bundler
+    apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev
     apt-get install chromium-browser -y
     apt-get install -f -y
     apt-get install peek
