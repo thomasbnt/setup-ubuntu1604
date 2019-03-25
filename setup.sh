@@ -31,6 +31,7 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     add-apt-repository ppa:snwh/pulp
     apt-add-repository ppa:brightbox/ruby-ng
     add-apt-repository ppa:peek-developers/stable
+    apt-add-repository ppa:brightbox/ruby-ng
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     apt-get update -y
@@ -42,7 +43,7 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install network-manager-openvpn -y
     apt-get install network-manager-openvpn-gnome -y
     apt-get install filezilla -y
-    apt-get install ruby2.2
+    apt-get install ruby2.3 ruby2.3-dev
     apt-get install ruby-bundler
     apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev
     apt-get install chromium-browser -y
