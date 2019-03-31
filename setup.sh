@@ -31,6 +31,7 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     add-apt-repository ppa:snwh/pulp
     apt-add-repository ppa:brightbox/ruby-ng
     add-apt-repository ppa:peek-developers/stable
+    add-apt-repository ppa:videolan/stable-daily
     apt-add-repository ppa:brightbox/ruby-ng
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
@@ -49,6 +50,7 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install chromium-browser -y
     apt-get install -f -y
     apt-get install peek
+    apt-get install vlc
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
     "Installing NodeJS"
     apt-get install nodejs -y

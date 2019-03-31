@@ -21,6 +21,7 @@ sudo -s
 * Chromium-browser
 * Filezilla client
 * Peek 
+* VLC
 
 * Script `dns_cloudflare` for change to public DNS CloudFlare. 
 * Script `web_init` for initiate a new project for website.
