@@ -27,6 +27,7 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y"  ] || [ "$answer" = "Yes"  ] || [ "$
     apt-get install curl -y
     apt-get install git -y
     apt-get install gimp -y
+    apt-get install easytag -y
     snap install gravit-designer
     add-apt-repository ppa:snwh/pulp
     apt-add-repository ppa:brightbox/ruby-ng
