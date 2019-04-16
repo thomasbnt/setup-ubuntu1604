@@ -22,6 +22,7 @@ sudo -s
 * Filezilla client
 * Peek 
 * VLC
+* Easytag
 
 * Script `dns_cloudflare` for change to public DNS CloudFlare. 
 * Script `web_init` for initiate a new project for website.
