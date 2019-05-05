@@ -42,6 +42,7 @@ Disable the guest account and create the `.ssh` folder.
 * openvpn
 * network-manager-openvpn
 * network-manager-openvpn-gnome
+* sshpass
 
 ## Development list
 
